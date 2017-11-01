@@ -1,0 +1,117 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Implementierung/" . "data/")
+ ("/home/leon/Projects/facharbeit/" . "LaTeX/")
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/" . "Implementierung/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/" . "Implementierung/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/Implementierung/" . "data/")
+ ("/" . "home/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/" . "Implementierung/")
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rosinen_picken/" . "Implementierung/")
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/" . "Rechtsrum_in_Rechthausen/")
+ ("/home/leon/Projects/BwInf/35_BwInf/" . "2_Runde/")
+ ("/home/" . "leon/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Implementierung/" . "data/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/" . "Implementierung/")
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/" . "Auto_Scrabble/")
+ ("/home/leon/Projects/BwInf/36_BwInf/" . "1_Runde/")
+ ("/home/leon/Projects/BwInf/" . "36_BwInf/")
+ ("/home/leon/Projects/" . "BwInf/")
+ ("/home/leon/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Implementierung/data/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Implementierung/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Dokumentation/"
+ "/home/leon/Projects/facharbeit/LaTeX/"
+ "/home/leon/.emacs.d/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Implementierung/"
+ "/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/Implementierung/"
+ "/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/Dokumentation/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Dokumentation/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/Implementierung/"
+ "/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/Implementierung/data/"
+ "/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rosinen_picken/Implementierung/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "input.txt"
+ "scrabble.py"
+ "Dokumentation.tex"
+ "facharbeit.tex"
+ "init.el"
+ "dreiecke.py"
+ "ausgabe.txt"
+ "dreiecke_old.py"
+ "rechtsrum_in_rechthausen.py"
+ "Dokumentation.pdf"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Implementierung/data/" (23020 44412 205253 38000) "../" "input.txt" "words.txt" "./")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Implementierung/" (23033 5933 111304 615000) "../" "data/" "scrabble.py" "./")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/Dokumentation/" (23033 6276 799194 973000) "../" "Dokumentation.tex~" "Dokumentation.toc" "#Dokumentation.tex#" "Dokumentation.log" "Dokumentation.tex" "./" "Dokumentation.aux" "Dokumentation.pdf" ".#Dokumentation.tex")
+
+ ("/home/leon/" (23033 4333 828948 292000) ".profile" ".AndroidStudio2.3/" "home/" ".pip/" "Templates/" "Documents/" ".vimrc" "../" ".oh-my-zsh/" ".npm/" "Android/" ".gstreamer-0.10/" "AndroidStudioProjects/" ".i3/" ".viminfo" ".zlogin" ".gnupg/" ".bash_logout" ".android/" ".zshrc" "tmp/" ".lesshst" "Downloads/" ".vscode/" ".wicd/" ".gitconfig" ".atom/" ".pylint.d/" "anaconda3/" "emacs-25.3.tar.gz" ".mplayer/" ".aptitude/" ".viminfz.tmp" ".bashrc" ".continuum/" ".icons/" ".m2/" ".ssh/" ".gconf/" ".bashrc-anaconda3.bak" "Music/" "PycharmProjects/" ".thumbnails/" ".jupyter/" ".zcompdump-LEONRACER-5.0.7" ".gdrive/" ".gphoto/" ".gksu.lock" ".gnome2/" ".config/" ".gtkrc-2.0" ".python_history" "Public/" ".texmf-var/" ".PyCharm2017.2/" ".xsession-errors" ".local/" "Videos/" ".zsh_history" ".fonts/" ".gnome2_private/" ".vim/" ".gimp-2.8/" ".mozilla/" ".bash_history" ".dbus/" ".zsh-update" ".emacs.d/" ".cache/" "Pictures/" "./" ".kde/" "emacs-25.3/" ".dotfiles/" ".oracle_jre_usage/" ".PyCharm2017.1/" ".IntelliJIdea2017.1/" ".java/" ".pki/" ".gnome-commander/" ".Xauthority" ".conda/" ".ipython/" ".gnome/" ".Xresources" "Desktop/" "Projects/" ".tooling/" ".gradle/" ".vimrc_background" ".octave_hist")
+
+ ("/home/leon/Projects/facharbeit/LaTeX/" (22832 27546 63894 29000) "facharbeit.aux" "../" "facharbeit.toc" "facharbeit.pdf" "facharbeit.tex" "facharbeit.out" "images/" "./" "facharbeit.log" ".facharbeit.tex")
+
+ ("/home/leon/Projects/facharbeit/" (22810 3471 348504 84000) "Abgabe/" "../" "Implementierung/" "LaTeX/" ".git/" "./" ".gitignore" "README.md")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Dokumentation/" (23032 60698 74295 180000) "../" "Dokumentation.toc" "Dokumentation.log" "Dokumentation.tex" "./" "Dokumentation.aux" "Dokumentation.pdf" ".#Dokumentation.tex")
+
+ ("/home/leon/.emacs.d/" (23031 48701 173617 430000) "../" "recentf~" "emacs-powerline/" "page-break-lines.el~" "ido.last~" "ac-comphist.dat" "ido.last" "init.el" "page-break-lines.el" "auto-save-list/" "recentf" "smex-items" ".cache/" "./" "init.el~" "elpa/")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Implementierung/" (23031 45596 58586 782000) "../" "ausgabe.txt" "data/" "dreiecke.py" "./")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/Implementierung/" (23023 6956 139984 199000) "data_structure.py" "../" "search_algorithms.pyc" "data/" "create_graph.py" "create_graph.pyc" "rechtsrum_in_rechthausen.py" "data_structure.pyc" "search_algorithms.py" "./" "turn_left.pyc" "turn_left.py")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rosinen_picken/Implementierung/" (23028 34492 495378 675000) "../" "data/" "rosinen_picken.py" "./")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/Implementierung/data/" (23030 20026 484186 62000) "../" "zimmerbelegung5.txt" "zimmerbelegung3.txt" "zimmerbelegung2.txt" "zimmerbelegung4.txt" "zimmerbelegung1.txt" "./" "zimmerbelegung6.txt")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/Dokumentation/" (22796 39351 748345 609000) "../" "texput.log" "Dokumentation.toc" "Dokumentation.log" "q.log" "Dokumentation.tex" "./" "Dokumentation.aux" "Dokumentation.pdf")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rechtsrum_in_Rechthausen/" (22796 39351 748345 609000) "../" "Implementierung/" "./" "Dokumentation/")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/Implementierung/" (23030 21550 125841 181000) "../" "zimmerbelegung.py" "ausgabe.txt" "data/" "./")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Auto_Scrabble/" (23021 60784 307499 439000) "../" "Implementierung/" "./" "Dokumentation/")
+
+ ("/home/leon/.config/" (23021 56066 11284 70000) "user-dirs.dirs" "chromium/" "nitrogen/" "autostart/" "../" "gtk-3.0/" "google-chrome/" "pulse/" "xfce4/" "matplotlib/" "gtk-2.0/" "htop/" "mimeapps.list" "octave/" "Code/" "whatsapp-desktop/" "./" "Trolltech.conf" "spotify/" "Atom/" "nautilus/" "dconf/" "menus/" "cef_user_data/" "vlc/" "user-dirs.locale" "sublime-text-3/" "pavucontrol.ini")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Zimmerbelegung/" (23024 46864 819980 716000) "../" "Implementierung/" "./" "Dokumentation/")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rosinen_picken/Dokumentation/" (22796 39351 752345 609000) "../" "Dokumentation.toc" "Dokumentation.log" "Dokumentation.tex" "./" "Dokumentation.aux" "Dokumentation.pdf")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/Rosinen_picken/" (22796 39351 752345 609000) "../" "Implementierung/" "./" "Dokumentation/")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/2_Runde/" (22950 61788 155700 899000) "../" "LeonWindheuser_Abgabe/" "Rosinen_picken/" "Rechtsrum_in_Rechthausen/" ".git/" "./" ".gitignore" "README.md" "aufgaben.pdf")
+
+ ("/home/leon/Projects/BwInf/35_BwInf/" (22841 43556 884509 350000) "../" "Bewertung_2_Runde.pdf" "./" "1_Runde/" "2_Runde/")
+
+ ("/home/" (22795 35011 665223 74000) "../" "./" "leon/")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/Implementierung/data/" (23021 54208 647199 290000) "dreiecke5.txt" "../" "dreiecke6.txt" "dreiecke1.txt" "dreiecke3.txt" "dreiecke2.txt" "dreiecke4.txt" "./")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/Dreiecke/" (22992 7014 567937 759000) "../" "Implementierung/" "./" "Dokumentation/")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/1_Runde/" (23025 56564 236558 927000) "../" "Dreiecke/" "Zimmerbelegung/" "Abgabe_LeonWindheuser/" ".git/" "./" ".gitignore" "Auto_Scrabble/" "aufgaben.pdf")
+
+ ("/home/leon/Projects/BwInf/36_BwInf/" (23018 28071 90983 628000) "../" "./" "1_Runde/" "2_Runde/")
+
+ ("/home/leon/Projects/BwInf/" (22981 11075 903024 623000) "../" "35_BwInf/" "34_BwInf/" "./" "36_BwInf/")
+
+ ("/home/leon/Projects/" (23026 23495 480593 881000) "../" "project_euler/" "UserData_Facebook/" "cpp/" "IOI_Training/" "BLL_BwInf/" ".vscode/" "BwInf/" "USACO/" "change_mac_adresse/" "berkeley_AI/" "facebook-leonwindheuser.zip" "Ludo_Aachen/" "magic_mirror/" "Monte_Carlo_DSA/" "facharbeit/" "curriculum_vitae/" "ML_Udacity/" "./" "chatbot_fw/" "fabi_berkeley_AI/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
