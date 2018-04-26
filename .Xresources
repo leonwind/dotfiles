@@ -10,6 +10,9 @@ URxvt.iso14755_52: false
 
 URxvt.intensityStyles: false
 
+URxvt.cursorBlink: 1
+URxvt.cursorColor: #00ff00
+
 #define base00 #1d1f21
 #define base01 #282a2e
 #define base02 #373b41
