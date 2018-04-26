@@ -1,8 +1,1 @@
-# Ignore all files
-*
-
-!.emacs/init.el
-!.i3/
-!.Xresources
-!.vimrc
-!.zshrc
+**
