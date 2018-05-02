@@ -289,5 +289,5 @@ bindsym $mod+shift+u exec "setxkbmap -layout us -variant intl"
 bindsym $mod+shift+d exec "setxkbmap -layout de -option ctrl:nocaps"
 
 
-# ThinPad sensitivity
+# TrackPoint sensitivity
 exec input --set-prop "13" "Device Accel Constant Deceleration" 0.55
