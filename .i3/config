@@ -279,6 +279,9 @@ bindsym $mod+Control+d exec "amixer -D pulse sset Master toggle"
 ##########
 ## MISC ##
 
+# remove all files in ~/misc older than a week
+exec 'find ~/misc -mtime +7 -delete'
+
 # caps as control
 exec "setxkbmap -layout us -variant intl -option ctrl:nocaps"
 
