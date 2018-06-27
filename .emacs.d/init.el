@@ -111,6 +111,7 @@
    (quote
     ("125fd2180e880802ae98b85f282b17f0aa8fa6cb9fc4f33d7fb19a38c40acef0" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" default)))
  '(indent-tabs-mode nil)
+ '(line-move-visual nil)
  '(minimap-always-recenter nil)
  '(minimap-hide-scroll-bar nil)
  '(minimap-highlight-line nil)
