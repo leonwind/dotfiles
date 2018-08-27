@@ -8,7 +8,7 @@ try:
 
     title = metadata['xesam:title']
     artist = metadata['xesam:artist'][0]
-    print(" %s - %s" % (artist, title))
+    print(" %s - %s" % (title, artist))
 # if spotify is closed: display nothing
 except:
     print("")
