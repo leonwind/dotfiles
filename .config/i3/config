@@ -1,0 +1,279 @@
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+
+
+
+
+###################################################
+# C O L O R S
+
+set $base00 #1d1f21
+set $base01 #282a2e
+set $base02 #373b41
+set $base03 #969896
+set $base04 #b4b7b4
+set $base05 #c5c8c6
+set $base06 #e0e0e0
+set $base07 #ffffff
+set $base08 #cc6666
+set $base09 #de935f
+set $base0A #f0c674
+set $base0B #b5bd68
+set $base0C #8abeb7
+set $base0D #81a2be
+set $base0E #b294bb
+set $base0F #a3685a
+
+client.focused $base0D $base0D $base00 $base01
+client.focused_inactive $base02 $base02 $base03 $base01
+client.unfocused $base01 $base01 $base03 $base01
+client.urgent $base02 $base08 $base07 $base08
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	# show bar on alt key
+	modifier Mod1
+        colors {
+                separator $base03
+                background $base01
+                statusline $base05
+                focused_workspace $base0D $base0D $base00
+                active_workspace $base02 $base02 $base07
+                inactive_workspace $base01 $base01 $base03
+                urgent_workspace $base08 $base08 $base07
+        }	
+}
+
+bindsym $mod+y bar mode toggle
+
+
+
+
+
+###################################################
+# G E N E R A L
+
+# set modifier on windows key
+set $mod Mod4
+
+font pango: Inconsolata\ for\ Powerline
+
+# hide window titles
+new_window none
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# restore wallpaper
+exec nitrogen --restore
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+
+
+
+
+###################################################
+# M O V E M E N T & O R I E N T A T I O N
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+# resize windows
+bindsym $mod+r mode "resize"
+
+
+
+
+
+###################################################
+# A P P L I C A T I O N S
+
+# start wifi
+exec "sudo killall wpa_supplicant"
+exec "sudo wicd"
+
+# start urxvt
+bindsym $mod+Return exec urxvt
+
+# start dmenu
+bindsym $mod+d exec dmenu_run
+
+#start emacs
+bindsym $mod+Shift+e exec emacs
+
+# start google-chrome
+bindsym $mod+c exec "google-chrome-stable"
+
+# start wicd-client
+bindsym $mod+Shift+w exec "wicd-client"
+
+# hide mouse cursor afer 1 second
+exec "unclutter -idle 1"
+
+# lock screen
+bindsym $mod+x exec "i3lock -c 000000 -n"
+
+# poweroff
+bindsym $mod+Shift+p exec "poweroff"
+
+# reboot
+bindsym $mod+Shift+x exec "reboot"
+
+# disconnect second monitor
+bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output HDMI1 --off"
+
+# connect second monitor above
+bindsym $mod+mod1+2 exec "xrandr --output eDP1 --auto --output HDMI1 --mode 1920x1080 --above eDP1 && nitrogen --restore"
+
+# connect second monitor to the left
+bindsym $mod+mod1+3 exec "xrandr --output eDP1 --auto --output HDMI1 --mode 1920x1080 --left-of eDP1 && nitrogen --restore"
+
+# only extern monitor
+bindsym $mod+mod1+4 exec "xrandr --output eDP1 --off --output HDMI1 --auto"
+
+# manage volume
+exec "amixer -c 1 sset Speaker,0 100%"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5%"
+bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
+# volume for external keyboard
+bindsym $mod+Control+s exec "amixer sset Master 5%+ unmute"
+bindsym $mod+Control+a exec "amixer sset Master 5%- unmute"
+bindsym $mod+Control+d exec "amixer sset Master toggle"
+
+# manage brightness
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
+# brightness for external keyboard
+bindsym $mod+shift+Control+s exec "xbacklight -inc 10"
+bindsym $mod+shift+Control+a exec "xbacklight -dec 10"
+
+# spotify client keybindings
+bindsym shift+space exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym shift+Right exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym shift+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+
+# caps as control
+exec "setxkbmap -layout us -variant intl -option ctrl:nocaps"
+# swap end and insert key on x240
+exec "xmodmap ~/.Xmodmap"

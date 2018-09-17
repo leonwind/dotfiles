@@ -1,9 +1,7 @@
 URxvt.scrollBar: false
 URxvt.letterspace: 2
 
-URxvt.font: xft:Hack-Regular:pixelsize=14,xft:Symbola
-URxvt.boldFont: xft:Hack-Bold:pixelsize=14:weight=bold,xft:Symbola
-URxvt.italicFont: xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbola
+URxvt.font: xft:Hack:pixelsize=14, xft:Inconsolata\ for\ Powerline
 
 URxvt.iso14755: false
 URxvt.iso14755_52: false
