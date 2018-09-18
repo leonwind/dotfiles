@@ -1,3 +1,4 @@
+;; initialize package archives from melpa and marmalade
 (require 'package)
 (package-initialize)
 
@@ -9,41 +10,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/")
 	     t)
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(set-cursor-color "#00ff00")
-(blink-cursor-mode 1)
 
-(ido-mode)
-
-(show-paren-mode 1)
-
-(global-hl-line-mode)
-
-(winner-mode t)
-
-(windmove-default-keybindings)
-
-(global-set-key (kbd "M-x") 'smex)
-
-(ac-config-default)
-
-(require 'linum-relative)
-(linum-mode)
-(linum-relative-global-mode)
-(setq linum-relative-current-symbol "")
-
-
-
-(autopair-global-mode)
-
-(global-undo-tree-mode)
-(global-set-key (kbd "M-/") 'undo-tree-visualize)
-
-(global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-}") 'mc/mark-next-like-this)
-
+;; set cusom variables
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -63,14 +31,58 @@
  ;; If there is more than one, they won't work right.
  )
 
-(setq inhibit-splash-screen t)
-(setq initial-scratch-message "")
-
+;; load gruvbox theme
 (load-theme 'gruvbox)
 
+;; set mod line and customize it colors
 (add-to-list 'load-path "~/.emacs.d/emacs-powerline")
 (require 'powerline)
 (setq powerline-arrow-shape 'arrow14)
 (custom-set-faces
  '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
  '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
+
+;; start emacs with scratch buffer
+(setq inhibit-splash-screen t)
+(setq initial-scratch-message "")
+
+
+;; set basic appearance
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(set-cursor-color "#00ff00")
+(blink-cursor-mode 1)
+
+;; activate ido
+(require 'ido)
+(ido-mode t)
+
+;; activate smex
+(global-set-key (kbd "M-x") 'smex)
+
+;; show matching parenthesis
+(show-paren-mode 1)
+
+;; highlight current line
+(global-hl-line-mode)
+
+;; activate autocompletion
+(ac-config-default)
+
+;; relative line numbering
+(require 'linum-relative)
+(linum-mode)
+(linum-relative-global-mode)
+(setq linum-relative-current-symbol "")
+
+;; pair braces and qutoes
+(autopair-global-mode)
+
+;; activate visual undo-tree
+(global-undo-tree-mode)
+(global-set-key (kbd "M-/") 'undo-tree-visualize)
+
+;; get multiple cursor
+(global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-}") 'mc/mark-next-like-this)
