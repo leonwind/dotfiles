@@ -1,0 +1,9 @@
+#!/bin/sh
+# shell script to prepend i3status with current spotify song
+
+i3status -c ~/.config/i3/i3status.conf | while :
+do
+    music=$( python ~/.config/i3/spotify.py)
+    read line
+    echo "$music | $line" || exit 1
+done
