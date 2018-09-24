@@ -34,7 +34,7 @@ client.urgent $base02 $base08 $base07 $base08
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/.config/i3/extended_i3status
+        status_command i3status -c ~/.config/i3/i3status.conf
 	# show bar on alt key
 	modifier Mod1
         colors {
@@ -276,4 +276,4 @@ bindsym shift+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.s
 # caps as control
 exec "setxkbmap -layout us -variant intl -option ctrl:nocaps"
 # swap end and insert key on x240
-exec "xmodmap ~/.Xmodmap"
+exec_always "xmodmap ~/.Xmodmap"
