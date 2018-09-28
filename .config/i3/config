@@ -147,6 +147,18 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# move workspace
+bindsym Mod1+Shift+h move workspace to output left
+bindsym Mod1+Shift+j move workspace to output down
+bindsym Mod1+Shift+k move workspace to output up
+bindsym Mod1+Shift+l move workspace to output right
+
+# alternatively use cursor keys
+bindsym Mod1+Shift+Left move workspace to output left
+bindsym Mod1+Shift+Down move workspace to output down
+bindsym Mod1+Shift+Up move workspace to output up
+bindsym Mod1+Shift+Right move workspace to output right
+
 # split in horizontal orientation
 bindsym $mod+b split h
 
@@ -205,7 +217,7 @@ bindsym $mod+r mode "resize"
 
 
 
-###################################################
+################################################### 
 # A P P L I C A T I O N S
 
 # start wifi
@@ -239,17 +251,7 @@ bindsym $mod+Shift+p exec "poweroff"
 # reboot
 bindsym $mod+Shift+x exec "reboot"
 
-# disconnect second monitor
-bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output HDMI1 --off"
 
-# connect second monitor above
-bindsym $mod+mod1+2 exec "xrandr --output eDP1 --auto --output HDMI1 --mode 1920x1080 --above eDP1 && nitrogen --restore"
-
-# connect second monitor to the left
-bindsym $mod+mod1+3 exec "xrandr --output eDP1 --auto --output HDMI1 --mode 1920x1080 --left-of eDP1 && nitrogen --restore"
-
-# only extern monitor
-bindsym $mod+mod1+4 exec "xrandr --output eDP1 --off --output HDMI1 --auto"
 
 # manage volume
 exec "amixer -c 1 sset Speaker,0 100%"
@@ -277,3 +279,19 @@ bindsym shift+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.s
 exec "setxkbmap -layout us -variant intl -option ctrl:nocaps"
 # swap end and insert key on x240
 exec_always "xmodmap ~/.Xmodmap"
+
+
+
+
+
+###################################################
+# M O N I T O R S
+
+# disconnect second monitor
+bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output DP2-2 --off"
+
+# laptop in docking station - second monitor to the right of laptop
+bindsym $mod+mod1+2 exec "xrandr --output eDP1 --auto --output DP2-2 --auto --right-of eDP1 && nitrogen --restore"
+
+# only extern monitor
+bindsym $mod+mod1+3 exec "xrandr --output eDP1 --off --output DP2-2 --auto"

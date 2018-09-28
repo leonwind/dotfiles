@@ -113,3 +113,5 @@
 
 ;; Show only one active window when opening multiple files at the same time.
 (add-hook 'window-setup-hook 'delete-other-windows)
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
