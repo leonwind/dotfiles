@@ -90,6 +90,8 @@
 ;; save emacs session
 (desktop-save-mode 1)
 
+;; change yes-no-prompt to y-n-prompt
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Removes *scratch* from buffer after the mode has been set.
 (defun remove-scratch-buffer ()
