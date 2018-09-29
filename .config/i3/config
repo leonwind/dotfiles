@@ -74,6 +74,9 @@ exec nitrogen --restore
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# start dockd daemon to configure monitor if laptop is docked or undocked
+exec --no-startup-id dockd --daemon
+
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
