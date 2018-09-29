@@ -279,7 +279,7 @@ bindsym shift+Right exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.
 bindsym shift+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 
 # caps as control
-exec "setxkbmap -layout us -variant intl -option ctrl:nocaps"
+exec_always "setxkbmap -layout us -variant intl -option ctrl:nocaps"
 # swap end and insert key on x240
 exec_always "xmodmap ~/.Xmodmap"
 
