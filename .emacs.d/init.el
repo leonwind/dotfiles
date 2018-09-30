@@ -50,8 +50,8 @@
 ;; set basic appearance
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(set-face-background 'cursor "#00ff00")
 (scroll-bar-mode -1)
-(set-cursor-color "#00ff00")
 (blink-cursor-mode 1)
 
 (setq-default indent-tabs-mode nil)
