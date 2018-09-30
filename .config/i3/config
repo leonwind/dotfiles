@@ -262,9 +262,9 @@ bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%"
 bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5%"
 bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
 # volume for external keyboard
-bindsym $mod+Control+s exec "amixer sset Master 5%+ unmute"
-bindsym $mod+Control+a exec "amixer sset Master 5%- unmute"
-bindsym $mod+Control+d exec "amixer sset Master toggle"
+bindsym $mod+Control+s exec "pactl set-sink-volume 0 +5%"
+bindsym $mod+Control+a exec "pactl set-sink-volume 0 -5%"
+bindsym $mod+Control+d exec "pactl set-sink-mute 0 toggle"
 
 # manage brightness
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
