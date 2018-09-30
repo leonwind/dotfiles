@@ -19,7 +19,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679" default)))
+    ("c856158cc996d52e2f48190b02f6b6f26b7a9abd5fea0c6ffca6740a1003b333" "ef98b560dcbd6af86fbe7fd15d56454f3e6046a3a0abd25314cfaaefd3744a9e" "7d2e7a9a7944fbde74be3e133fc607f59fdbbab798d13bd7a05e38d35ce0db8d" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679" default)))
  '(line-move-visual nil)
  '(package-selected-packages
    (quote
@@ -29,7 +29,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
+ '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
 
 ;; load gruvbox theme
 (load-theme 'gruvbox)
@@ -38,9 +39,7 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-powerline")
 (require 'powerline)
 (setq powerline-arrow-shape 'arrow14)
-(custom-set-faces
- '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
- '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
+
 
 ;; start emacs with scratch buffer
 (setq inhibit-splash-screen t)
