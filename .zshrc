@@ -20,3 +20,6 @@ prompt_dir() {
 
 # remove user@host
 prompt_context(){}
+
+bindkey "^P" up-line-or-search
+bindkey "^N" down-line-or-search
