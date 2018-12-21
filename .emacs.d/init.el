@@ -9,7 +9,14 @@
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/")
 	     t)
+;; define list of packages to install
+(defvar myPackages
+  '(better-defaults
+    material-theme
+    elpy))
 
+;; for python enviroment
+(elpy-enable)
 
 ;; set cusom variables
 (custom-set-variables
@@ -23,13 +30,14 @@
  '(line-move-visual nil)
  '(package-selected-packages
    (quote
-    (multiple-cursors python-pep8 undo-tree autopair linum-relative gruvbox-theme auto-complete smex))))
+    (elpy multiple-cursors python-pep8 undo-tree autopair linum-relative gruvbox-theme auto-complete smex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
+ '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
 
 ;; load gruvbox theme
 (load-theme 'gruvbox)
@@ -38,9 +46,7 @@
 (add-to-list 'load-path "~/.emacs.d/emacs-powerline")
 (require 'powerline)
 (setq powerline-arrow-shape 'arrow14)
-(custom-set-faces
- '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
- '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
+
 
 ;; start emacs with scratch buffer
 (setq inhibit-splash-screen t)
@@ -94,6 +100,7 @@
 
 ;; save emacs session
 (desktop-save-mode 1)
+
 
 ;; change yes-no-prompt to y-n-prompt
 (fset 'yes-or-no-p 'y-or-n-p)
