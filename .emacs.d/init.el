@@ -18,6 +18,12 @@
 ;; for python enviroment
 (elpy-enable)
 
+;; set mod line and customize it colors
+(add-to-list 'load-path "~/.emacs.d/emacs-powerline")
+(require 'powerline)
+(setq powerline-arrow-shape 'arrow14)
+
+
 ;; set cusom variables
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -41,12 +47,6 @@
 
 ;; load gruvbox theme
 (load-theme 'gruvbox)
-
-;; set mod line and customize it colors
-(add-to-list 'load-path "~/.emacs.d/emacs-powerline")
-(require 'powerline)
-(setq powerline-arrow-shape 'arrow14)
-
 
 ;; start emacs with scratch buffer
 (setq inhibit-splash-screen t)
