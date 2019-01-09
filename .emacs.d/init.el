@@ -106,10 +106,10 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Removes *scratch* from buffer after the mode has been set.
-(defun remove-scratch-buffer ()
-  (if (get-buffer "*scratch*")
-      (kill-buffer "*scratch*")))
-(add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
+;;(defun remove-scratch-buffer ()
+;;  (if (get-buffer "*scratch*")
+;;      (kill-buffer "*scratch*")))
+;;(add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
 
 ;; Removes *messages* from the buffer.
 (setq-default message-log-max nil)
