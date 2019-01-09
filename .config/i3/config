@@ -281,6 +281,9 @@ bindsym $mod+Control+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPl
 # caps as control
 exec_always "setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option ctrl:nocaps"
 
+# invert scrolling direction
+exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-111
+
 
 
 
