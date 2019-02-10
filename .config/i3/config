@@ -292,7 +292,7 @@ exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelt
 # M O N I T O R S
 
 # disconnect second monitor
-bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output DP2-2 --off"
+bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output DP2-2 --off --output HDMI1 --off"
 
 # laptop in docking station - second monitor to the right of laptop
 bindsym $mod+mod1+2 exec "xrandr --output eDP1 --auto --output DP2-2 --auto --right-of eDP1 && nitrogen --restore"
