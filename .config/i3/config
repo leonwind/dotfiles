@@ -75,8 +75,8 @@ bindsym $mod+Shift+q kill
 # start dockd daemon to configure monitor if laptop is docked or undocked
 exec --no-startup-id dockd --daemon
 
-# notify if internal / second battery is below 10 percent
-exec "python ~/.config/i3/batteryWarning.py"
+# notify if internal / second battery is below 20 percent
+exec_always "python ~/.config/i3/batteryWarning.py"
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

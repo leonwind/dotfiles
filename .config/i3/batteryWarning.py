@@ -1,4 +1,4 @@
-# check every 10 seconds if internal / second battery is below 10 percent
+# check every 10 seconds if internal / second battery is below 20 percent
 # notify user by sending an i3-nagbar message
 
 from subprocess import PIPE, run
