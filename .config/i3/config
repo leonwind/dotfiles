@@ -37,6 +37,7 @@ bar {
     status_command i3status -c ~/.config/i3/i3status.conf
 	# show bar on alt key
 	modifier Mod1
+    tray_output none
         colors {
                 separator $base03
                 background $base01
