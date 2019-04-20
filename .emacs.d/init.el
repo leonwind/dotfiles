@@ -111,6 +111,11 @@
 ;;      (kill-buffer "*scratch*")))
 ;;(add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
 
+(defun kill-other-buffers ()
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
 ;; Removes *messages* from the buffer.
 (setq-default message-log-max nil)
 (kill-buffer "*Messages*")
