@@ -21,5 +21,10 @@ prompt_dir() {
 # remove user@host
 prompt_context(){}
 
+# alias for git
+alias gits="git status"
+alias gita="git add -A"
+alias gitc="git commit -m"
+
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
