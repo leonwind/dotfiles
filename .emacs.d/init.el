@@ -101,6 +101,8 @@
 ;; save emacs session
 (desktop-save-mode 1)
 
+;; emacs copy to clipboard
+(setq x-select-enable-clipboard t)
 
 ;; change yes-no-prompt to y-n-prompt
 (fset 'yes-or-no-p 'y-or-n-p)
