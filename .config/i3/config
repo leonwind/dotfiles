@@ -299,5 +299,8 @@ bindsym $mod+mod1+1 exec "xrandr --output eDP1 --auto --output DP2-2 --off --out
 # laptop in docking station - second monitor to the right of laptop
 bindsym $mod+mod1+2 exec "xrandr --output eDP1 --auto --output DP2-2 --auto --right-of eDP1 && nitrogen --restore"
 
+# laptop in pool room in university
+bindsym $mod+mod1+3 exec "xrandr --output eDP1 --auto --output HDMI1 --auto --above eDP1 && nitrogen --restore"
+
 # only extern monitor
-bindsym $mod+mod1+3 exec "xrandr --output eDP1 --off --output DP2-2 --auto"
+bindsym $mod+mod1+4 exec "xrandr --output eDP1 --off --output DP2-2 --auto"
