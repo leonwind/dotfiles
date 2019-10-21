@@ -36,7 +36,7 @@
  '(line-move-visual nil)
  '(package-selected-packages
    (quote
-    (meghanada yasnippet-classic-snippets elpy multiple-cursors python-pep8 undo-tree autopair linum-relative gruvbox-theme auto-complete smex))))
+    (haskell-mode meghanada yasnippet-classic-snippets elpy multiple-cursors python-pep8 undo-tree autopair linum-relative gruvbox-theme auto-complete smex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
