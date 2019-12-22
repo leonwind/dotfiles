@@ -65,6 +65,8 @@
 (blink-cursor-mode 1)
 (set-face-attribute 'default nil :height 110)
 
+(column-number-mode 1)
+
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq-default c-basic-offset 4)
