@@ -19,9 +19,9 @@
 (elpy-enable)
 
 ;; set mod line and customize it colors
-(add-to-list 'load-path "~/.emacs.d/emacs-powerline")
-(require 'powerline)
-(setq powerline-arrow-shape 'arrow14)
+;;(add-to-list 'load-path "~/.emacs.d/emacs-powerline")
+;;(require 'powerline)
+;;(setq powerline-arrow-shape 'arrow)
 
 
 ;; set cusom variables
@@ -32,7 +32,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679" default)))
+    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e"
+     "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa"
+     "cd4d1a0656fee24dc062b997f54d6f9b7da8f6dc8053ac858f15820f9a04a679"
+     default)))
  '(line-move-visual nil)
  '(package-selected-packages
    (quote
@@ -42,8 +45,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(mode-line ((t (:foreground "#1d1f21" :background "#81a2be" :box nil))))
+ '(mode-line ((t (:foreground "#1d1f21" :background "#c5c8c6" :box nil))))
  '(mode-line-inactive ((t (:foreground "#969896" :background "#282a2e" :box nil)))))
+
 
 ;; load gruvbox theme
 (load-theme 'gruvbox)
@@ -59,6 +63,7 @@
 (set-face-background 'cursor "#00ff00")
 (scroll-bar-mode -1)
 (blink-cursor-mode 1)
+(set-face-attribute 'default nil :height 110)
 
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
