@@ -28,3 +28,6 @@ alias gitc="git commit -m"
 
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
