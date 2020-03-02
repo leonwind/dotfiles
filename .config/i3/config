@@ -239,7 +239,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+e exec emacs
 
 # start google-chrome
-bindsym $mod+c exec "google-chrome-stable"
+bindsym $mod+c exec "chromium"
 
 # start wicd-client
 bindsym $mod+Shift+w exec "wicd-client"

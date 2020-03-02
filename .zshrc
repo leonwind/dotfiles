@@ -25,6 +25,7 @@ prompt_context(){}
 alias gits="git status"
 alias gita="git add -A"
 alias gitc="git commit -m"
+alias gitd="git diff"
 
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
