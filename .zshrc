@@ -33,3 +33,9 @@ bindkey "^N" down-line-or-search
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/leon/google-cloud-sdk/path.zsh.inc' ]; then . '/home/leon/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/leon/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/leon/google-cloud-sdk/completion.zsh.inc'; fi
