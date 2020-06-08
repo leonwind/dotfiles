@@ -212,6 +212,7 @@ bindsym $mod+d exec dmenu_run -i
 bindsym $mod+p exec passmenu -i
 
 # start a terminal
+bindsym $mod+t exec urxvt
 bindsym $mod+Return exec urxvt
 
 # start google-chrome
