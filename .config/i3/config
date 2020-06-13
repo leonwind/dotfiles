@@ -216,8 +216,7 @@ bindsym $mod+t exec urxvt
 bindsym $mod+Return exec urxvt
 
 # start google-chrome
-bindsym $mod+c exec google-chrome-stable
-
+bindsym $mod+c exec chromium
 # lock screen
 bindsym $mod+x exec "i3lock -c 000000 -n"
 
