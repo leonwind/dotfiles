@@ -3,7 +3,21 @@ export ZSH=/home/leon/.oh-my-zsh
 export TERM="xterm-256color"
 
 # select zsh theme from oh-my-zsh
-ZSH_THEME="agnoster"
+ZSH_THEME=""
+
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt_newline='%666v'
+PROMPT=" $PROMPT"
+
+zstyle ':prompt:pure:path' color green 
+zstyle ':propmpt:pure:git:branch' color yellow
+zstyle ':propmpt:pure:git:dirty' color red 
+zstyle ':prompt:pure:prompt:success' color yellow 
+zstyle ':prompt:pure:prompt:error' color red
+zstyle ':prompt:pure:git:stash' show yes
+
+prompt pure
 
 # plugins
 plugins=(git zsh-syntax-highlighting z)
