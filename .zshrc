@@ -3,7 +3,7 @@ export ZSH=/home/leon/.oh-my-zsh
 export TERM="xterm-256color"
 
 # select zsh theme from oh-my-zsh
-ZSH_THEME="agnsoter"
+ZSH_THEME="agnoster"
 
 # plugins
 plugins=(git zsh-syntax-highlighting z)
