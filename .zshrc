@@ -18,6 +18,8 @@ prompt_dir() {
 # remove user@host
 prompt_context(){}
 
+export PATH=/home/leon/.local/bin:$PATH
+
 alias chrome="chromium"
 
 alias gits="git status"
