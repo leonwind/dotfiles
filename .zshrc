@@ -20,6 +20,7 @@ prompt_context(){}
 
 export PATH=/home/leon/.local/bin:$PATH
 
+alias vim="nvim"
 alias chrome="chromium"
 
 alias gits="git status"
