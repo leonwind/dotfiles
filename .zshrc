@@ -5,7 +5,6 @@ export TERM="xterm-256color"
 # select zsh theme from oh-my-zsh
 ZSH_THEME="agnoster"
 
-# plugins
 plugins=(git zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh

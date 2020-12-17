@@ -3,13 +3,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 
 " Editor generals
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 " LaTeX
 Plug 'lervag/vimtex'
 let g:vimtex_view_general_viewer = 'evince'
 call plug#end()
-
 
 syntax on 
 set number
