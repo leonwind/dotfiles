@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#00ff00",
+		"terminalCursor.foreground": "#00ff00"
+	},
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+	"workbench.statusBar.visible": true,
+	"workbench.activityBar.visible": true,
+	"window.menuBarVisibility": "toggle",
+	"editor.lineNumbers": "relative"
+}
