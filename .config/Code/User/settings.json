@@ -9,5 +9,15 @@
 	"workbench.statusBar.visible": true,
 	"workbench.activityBar.visible": true,
 	"window.menuBarVisibility": "toggle",
-	"editor.lineNumbers": "relative"
+	"editor.lineNumbers": "relative",
+	"editor.fontSize": 15,
+	"workbench.editorAssociations": [
+		{
+			"viewType": "jupyter.notebook.ipynb",
+			"filenamePattern": "*.ipynb"
+		}
+	],
+	"vim.useSystemClipboard": true,
+	"python.linting.pylintArgs": ["--generate-members"]
 }
+
