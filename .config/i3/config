@@ -256,7 +256,7 @@ bindsym $mod+shift+Control+s exec "xbacklight -inc 5"
 bindsym $mod+shift+Control+a exec "xbacklight -dec 5"
 
 # disconnect external monitors
-bindsym $mod+mod1+1 exec "xrandr --output eDP-1 --auto --output DP-2-2 --off --output DP-2-1 --off"
+bindsym $mod+mod1+1 exec "xrandr --output eDP-1 --auto --output DP-2-2 --off --output DP-2-1 --off --output HDMI-1 --off"
 
 # laptop in docking station; connect only external monitors
 bindsym $mod+mod1+2 exec "xrandr --output eDP-1 --off --output DP-2-2 --auto --output DP-2-1 --auto --right-of DP-2-2"
