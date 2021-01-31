@@ -12,12 +12,7 @@
 	"window.menuBarVisibility": "toggle",
 	"editor.lineNumbers": "relative",
 	"editor.fontSize": 15,
-	"workbench.editorAssociations": [
-		{
-			"viewType": "jupyter.notebook.ipynb",
-			"filenamePattern": "*.ipynb"
-		}
-	],
+	"workbench.editorAssociations": [],
 	"vim.useSystemClipboard": true,
 	"python.linting.pylintArgs": [
 		"--generate-members"
