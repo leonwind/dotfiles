@@ -230,7 +230,7 @@ bindsym $mod+Shift+p exec "poweroff"
 bindsym $mod+Shift+x exec "reboot"
 
 # make screenshot
-bindsym $mod+mod1+p exec "scrot -d 1"
+bindsym $mod+mod1+p exec "scrot"
 
 # spotify client keybindings
 bindsym $mod+Control+space exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
