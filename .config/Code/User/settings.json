@@ -17,6 +17,8 @@
 	"python.linting.pylintArgs": [
 		"--generate-members"
 	],
-	"extensions.ignoreRecommendations": true
+	"extensions.ignoreRecommendations": true,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": true,
 }
 
