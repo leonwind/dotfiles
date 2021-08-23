@@ -221,7 +221,7 @@ bindsym $mod+Return exec urxvt
 # start google-chrome
 bindsym $mod+c exec chromium
 # lock screen
-bindsym $mod+x exec "i3lock -c 000000 -n"
+# bindsym $mod+x exec "i3lock -c 000000 -n"
 
 # poweroff
 bindsym $mod+Shift+p exec "poweroff"
