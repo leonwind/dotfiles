@@ -1,13 +1,8 @@
 call plug#begin('~/.vim/plugged')
 " Colorscheme
 Plug 'morhetz/gruvbox'
+Plug 'Valloric/YouCompleteMe'
 
-" Editor generals
-" Plug 'Valloric/YouCompleteMe'
-
-" LaTeX
-Plug 'lervag/vimtex'
-let g:vimtex_view_general_viewer = 'evince'
 call plug#end()
 
 syntax on 

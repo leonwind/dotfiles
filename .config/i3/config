@@ -12,9 +12,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# trigger battery warning if battery is low
-#exec "python ~/.config/i3/battery_warning.py"
-
 ########################
 ###### C O L O R S #####
 
@@ -219,9 +216,9 @@ bindsym $mod+t exec urxvt
 bindsym $mod+Return exec urxvt
 
 # start google-chrome
-bindsym $mod+c exec chromium
+bindsym $mod+c exec google-chrome-stable 
 # lock screen
-# bindsym $mod+x exec "i3lock -c 000000 -n"
+bindsym $mod+x exec "i3lock -c 000000 -n"
 
 # poweroff
 bindsym $mod+Shift+p exec "poweroff"
@@ -263,6 +260,3 @@ bindsym $mod+mod1+1 exec "xrandr --output eDP-1 --auto --output DP-2-2 --off --o
 
 # laptop in docking station; connect only external monitors
 bindsym $mod+mod1+2 exec "xrandr --output eDP-1 --off --output DP-2-2 --auto --output DP-2-1 --auto --left-of DP-2-2"
-
-# use only single external monitor
-bindsym $mod+mod1+3 exec "xrandr --output eDP-1 --off --output HDMI-1 --auto"
