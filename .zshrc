@@ -11,7 +11,9 @@ export PATH=/home/leon/.local/bin/:$PATH
 
 ZSH_THEME="agnoster"
 
-plugins=()
+plugins=(
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
