@@ -17,6 +17,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Add zsh-z jumps
+source ~/.oh-my-zsh/custom/plugins/zsh-z/zsh-z.plugin.zsh
+
 # Add fzf keybindings
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
