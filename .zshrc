@@ -17,6 +17,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Add fzf keybindings
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+
 # shorten prompt
 prompt_dir() {
     prompt_segment blue black "%-53<...<%3~%<<"
