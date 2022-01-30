@@ -2,8 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 " Colorscheme
 Plug 'morhetz/gruvbox'
-" Autocompletion
-Plug 'Valloric/YouCompleteMe'
 " LaTeX support
 Plug 'lervag/vimtex'
 " Set evince as default pdf viewer for vimtex
