@@ -6,8 +6,8 @@ fi
 export ZSH=/home/leon/.oh-my-zsh
 export TERM="xterm-256color"
 
-
 export PATH=/home/leon/.local/bin/:$PATH
+export PATH="$PATH:$HOME/go/bin"
 
 ZSH_THEME="agnoster"
 
