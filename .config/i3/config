@@ -168,7 +168,7 @@ bindsym $mod+r mode "resize"
 bar {
 		modifier $mod	
 
-		tray_output none
+		tray_output primary 
         status_command i3status --config ~/.config/i3/i3status.conf
         colors {
                 # bar background color
