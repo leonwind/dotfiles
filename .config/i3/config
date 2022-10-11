@@ -26,6 +26,8 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
+exec --no-startup-id xsetroot -solid "$bg"
+
 # class                 border | backgr | text | indicator | child_border
 client.focused          $blue $blue $darkgray $purple $darkgray
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
@@ -168,7 +170,7 @@ bindsym $mod+r mode "resize"
 bar {
 		modifier $mod	
 
-		tray_output primary 
+		tray_output none 
         status_command i3status --config ~/.config/i3/i3status.conf
         colors {
                 # bar background color
@@ -206,11 +208,10 @@ exec "setxkbmap -layout us -variant altgr-intl -option nodeadkeys -option ctrl:n
 exec --no-startup-id redshift
 
 # start dmenu
-bindsym $mod+d exec dmenu_run -i
+bindsym $mod+d exec rofi -show run
 
 # start pass-menu
-bindsym $mod+p exec passmenu -i
-
+bindsym $mod+p exec rofi-pass
 # start a terminal
 bindsym $mod+t exec urxvt
 bindsym $mod+Return exec urxvt
@@ -249,14 +250,13 @@ bindsym $mod+Control+a exec "pactl set-sink-volume 0 -5%"
 bindsym $mod+Control+d exec "pactl set-sink-mute 0 toggle"
 
 # manage brightness
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 5"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 5"
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86MonBrightnessDown exec "light -U 5"
 # brightness for external keyboard
-bindsym $mod+shift+Control+s exec "xbacklight -inc 5"
-bindsym $mod+shift+Control+a exec "xbacklight -dec 5"
+bindsym $mod+shift+Control+s exec "light -A 5"
+bindsym $mod+shift+Control+a exec "light -U 5"
 
 # disconnect external monitors
-bindsym $mod+mod1+1 exec "xrandr --output eDP-1 --auto --output DP-2-2 --off --output DP-2-1 --off --output HDMI-1 --off"
-
+bindsym $mod+mod1+1 exec $HOME/.screenlayout/only-laptop.sh
 # laptop in docking station; connect only external monitors
-bindsym $mod+mod1+2 exec "xrandr --output eDP-1 --off --output DP-2-2 --auto --output DP-2-1 --auto --left-of DP-2-2"
+bindsym $mod+mod1+2 exec $HOME/.screenlayout/home-docking-station.sh
