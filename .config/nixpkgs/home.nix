@@ -35,6 +35,7 @@
         zip
         unzip
         go-chromecast
+        steam
 
         nodejs
         delta
