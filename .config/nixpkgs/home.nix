@@ -36,6 +36,7 @@
         unzip
         go-chromecast
         steam
+        networkmanagerapplet
 
         nodejs
         delta
