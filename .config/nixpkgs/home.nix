@@ -37,6 +37,7 @@
         go-chromecast
         steam
         networkmanagerapplet
+        vscode
 
         nodejs
         delta
