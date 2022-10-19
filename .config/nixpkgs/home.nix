@@ -13,8 +13,9 @@
 	home.stateVersion = "22.05";
 	programs.home-manager.enable = true;
 
-	home.packages = with pkgs; [
-		htop
+    home.packages = with pkgs; [
+        blueman
+        htop
         google-chrome
         rxvt_unicode
         tmux

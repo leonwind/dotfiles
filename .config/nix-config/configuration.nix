@@ -169,4 +169,6 @@
     remotePlay.openFirewall = true;  
     dedicatedServer.openFirewall = true;   
   };
+
+  services.blueman.enable = true;
 }
