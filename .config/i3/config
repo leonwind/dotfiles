@@ -259,4 +259,6 @@ bindsym $mod+shift+Control+a exec "light -U 5"
 # disconnect external monitors
 bindsym $mod+mod1+1 exec $HOME/.screenlayout/only-laptop.sh
 # laptop in docking station; connect only external monitors
-bindsym $mod+mod1+2 exec $HOME/.screenlayout/home-docking-station.sh
+bindsym $mod+mod1+2 exec $HOME/.screenlayout/home-docking-no-laptop.sh
+# laptop in docking station; connect external monitors above laptop
+bindsym $mod+mod1+3 exec $HOME/.screenlayout/home-docking-with-laptop.sh
