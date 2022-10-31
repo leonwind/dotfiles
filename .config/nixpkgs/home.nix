@@ -24,7 +24,8 @@
 		oh-my-zsh	
 		rofi
 		pass
-		rofi-pass
+        rofi-pass
+        firefox
 		neofetch
 		arandr
         redshift
