@@ -16,6 +16,7 @@
     home.packages = with pkgs; [
         ncdu
         blueman
+        tmux
         htop
         google-chrome
         rxvt_unicode
@@ -64,7 +65,7 @@
         longitude = "13.40";
         temperature = {
             day = 7000;
-            night = 2200;
+            night = 2500;
         };
     };
     
