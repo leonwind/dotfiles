@@ -14,6 +14,7 @@
 	programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
+        xclip
         ncdu
         blueman
         tmux
