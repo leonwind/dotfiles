@@ -56,6 +56,8 @@
         python3
         python39Packages.pip
         go
+
+        zoom
     ];
     
     services.redshift = {
