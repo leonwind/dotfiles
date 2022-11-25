@@ -25,7 +25,7 @@
 		source-code-pro
 		oh-my-zsh	
 		rofi
-		pass
+        pass
         rofi-pass
         firefox
 		neofetch
@@ -68,7 +68,7 @@
         longitude = "13.40";
         temperature = {
             day = 7000;
-            night = 3500;
+            night = 2800;
         };
     };
     
