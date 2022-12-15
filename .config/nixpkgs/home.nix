@@ -20,6 +20,7 @@
         tmux
         htop
         google-chrome
+        chromium
         rxvt_unicode
         tmux
 		source-code-pro
