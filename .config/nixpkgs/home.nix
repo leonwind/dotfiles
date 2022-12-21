@@ -16,6 +16,7 @@
     home.packages = with pkgs; [
         xclip
         ncdu
+        nethogs
         blueman
         tmux
         htop
