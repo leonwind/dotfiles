@@ -43,6 +43,8 @@
             
             chrome = "google-chrome-stable";
             lxprint =  "ssh ge57dov@lxhalle.in.tum.de lpr <";
+
+            idea = "idea-ultimate";
         };
 	};
 }
