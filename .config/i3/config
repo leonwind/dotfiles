@@ -30,7 +30,7 @@ set $focus #00ff00
 exec --no-startup-id xsetroot -solid "$bg"
 
 # class                 border | backgr | text | indicator | child_border
-client.focused          $blue $blue $darkgray $purple $red
+client.focused          $blue $blue $darkgray $purple $blue
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
