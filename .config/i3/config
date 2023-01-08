@@ -25,14 +25,17 @@ set $purple #b16286
 set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
+set $focus #00ff00
 
 exec --no-startup-id xsetroot -solid "$bg"
 
 # class                 border | backgr | text | indicator | child_border
-client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused          $blue $blue $darkgray $purple $red
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
+
+for_window [class="^.*"] border pixel 1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
