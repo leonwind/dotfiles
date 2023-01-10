@@ -46,6 +46,7 @@
         scrot
         networkmanagerapplet
         vscode
+        poppler_utils
 
         nodejs
         delta
