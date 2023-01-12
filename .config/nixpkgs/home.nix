@@ -61,6 +61,7 @@
         python39Packages.pip
         go
 
+        spotify
         zoom
     ];
     
