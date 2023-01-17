@@ -63,6 +63,7 @@
 
         spotify
         zoom
+        anki-bin
     ];
     
     services.redshift = {
