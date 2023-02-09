@@ -64,6 +64,7 @@
         spotify
         zoom
         anki-bin
+        xfce.thunar
     ];
     
     services.redshift = {
