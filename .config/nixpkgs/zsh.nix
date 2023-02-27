@@ -32,7 +32,7 @@
 
         shellAliases = {
             hm = "home-manager";
-
+        
             gits = "git status";
             gita = "git add -A";
             gitc = "git commit -m";
@@ -45,6 +45,8 @@
             lxprint =  "ssh ge57dov@lxhalle.in.tum.de lpr <";
 
             idea = "idea-ultimate";
+
+            perf-stats = "perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations";
         };
 	};
 }
