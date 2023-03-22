@@ -49,6 +49,7 @@
             perf-stats = "perf stat -B -e cache-references,cache-misses,cycles,instructions,branches,faults,migrations";
 
             copy = "xclip -selection clipboard";
+            fvim = "vim $(fzf)";
         };
 	};
 }
