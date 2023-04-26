@@ -14,6 +14,9 @@
 	programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
+        gnome.gnome-keyring
+        libsecret 
+        libgnome-keyring
         xclip
         ncdu
         nethogs
@@ -60,6 +63,7 @@
         python3
         python39Packages.pip
         python39Packages.conda
+        conda
         go
 
         spotify
