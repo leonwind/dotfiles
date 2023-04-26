@@ -59,6 +59,7 @@
         
         python3
         python39Packages.pip
+        python39Packages.conda
         go
 
         spotify
