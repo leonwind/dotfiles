@@ -50,6 +50,7 @@
         networkmanagerapplet
         vscode
         poppler_utils
+        pavucontrol
 
         nodejs
         delta
