@@ -56,9 +56,9 @@
         delta
 
         jetbrains.idea-ultimate
-        jetbrains.pycharm-professional
+        #jetbrains.pycharm-professional
         jetbrains.goland
-        jetbrains.webstorm
+        #jetbrains.webstorm
         jetbrains.clion
         
         python3
