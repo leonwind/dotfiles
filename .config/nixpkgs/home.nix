@@ -23,6 +23,7 @@
         blueman
         tmux
         htop
+        docker
         google-chrome
         chromium
         rxvt_unicode
