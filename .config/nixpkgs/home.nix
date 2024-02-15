@@ -10,7 +10,7 @@
 	home.homeDirectory = "/home/leon";
 	nixpkgs.config.allowUnfree = true;
 
-	home.stateVersion = "22.05";
+    home.stateVersion = "23.05";
 	programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
@@ -57,9 +57,7 @@
         delta
 
         jetbrains.idea-ultimate
-        #jetbrains.pycharm-professional
         jetbrains.goland
-        #jetbrains.webstorm
         jetbrains.clion
         
         python3
