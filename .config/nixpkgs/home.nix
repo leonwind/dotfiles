@@ -28,7 +28,8 @@
         chromium
         rxvt_unicode
         tmux
-		source-code-pro
+        source-code-pro
+        spectacle
 		oh-my-zsh	
 		rofi
         pass
