@@ -19,6 +19,7 @@
         libgnome-keyring
         xclip
         ncdu
+        shutter
         nethogs
         blueman
         tmux
@@ -29,7 +30,6 @@
         rxvt_unicode
         tmux
         source-code-pro
-        spectacle
 		oh-my-zsh	
 		rofi
         pass
