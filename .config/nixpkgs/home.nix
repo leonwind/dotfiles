@@ -10,7 +10,7 @@
 	home.homeDirectory = "/home/leon";
 	nixpkgs.config.allowUnfree = true;
 
-    home.stateVersion = "23.05";
+    home.stateVersion = "24.05";
 	programs.home-manager.enable = true;
 
     home.packages = with pkgs; [
@@ -54,11 +54,6 @@
         poppler_utils
         pavucontrol
 
-        nodejs
-        delta
-
-        jetbrains.idea-ultimate
-        jetbrains.goland
         jetbrains.clion
         
         python3
@@ -74,7 +69,7 @@
     ];
     
     services.redshift = {
-        enable = true;
+        enable = false;
         # Lat. and long. of Berlin 
         latitude = "52.52";
         longitude = "13.40";
