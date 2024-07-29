@@ -10,6 +10,9 @@ URxvt.intensityStyles: false
 URxvt.cursorBlink: 1
 URxvt.cursorColor: #00ff00
 
+! To fix bug that new terminal starts in center of the screen
+URxvt.geometry: 400x400
+
 
 ! hard contrast: *background: #1d2021
 *background: #282828
