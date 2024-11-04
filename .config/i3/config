@@ -137,6 +137,12 @@ bindsym Mod1+Shift+j move workspace to output down
 bindsym Mod1+Shift+k move workspace to output up
 bindsym Mod1+Shift+l move workspace to output right
 
+# move workspace to different output with Arrow keys
+bindsym Mod1+Shift+Left move workspace to output left
+bindsym Mod1+Shift+Down move workspace to output down
+bindsym Mod1+Shift+Up move workspace to output up
+bindsym Mod1+Shift+Right move workspace to output right
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -234,15 +240,6 @@ bindsym $mod+Shift+x exec "reboot"
 # make screenshot
 bindsym $mod+mod1+p exec "scrot"
 
-# spotify client keybindings
-bindsym $mod+Control+space exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-bindsym $mod+Control+l exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-bindsym $mod+Control+h exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-
-# use cursor key instead 
-bindsym $mod+Control+Right exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-bindsym $mod+Control+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-
 # manage volume
 exec "amixer -c 1 sset Speaker,0 100%"
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%"
@@ -268,3 +265,4 @@ bindsym $mod+mod1+2 exec $HOME/.screenlayout/home-docking-no-laptop.sh
 bindsym $mod+mod1+3 exec $HOME/.screenlayout/uni-bib.sh
 # laptop in docking station; connect external monitors above laptop
 bindsym $mod+mod1+0 exec $HOME/.screenlayout/home-docking-with-laptop.sh
+
