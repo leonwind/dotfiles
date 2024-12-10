@@ -264,5 +264,5 @@ bindsym $mod+mod1+2 exec $HOME/.screenlayout/home-docking-no-laptop.sh
 # Connect to university computer pool monitors. 
 bindsym $mod+mod1+3 exec $HOME/.screenlayout/uni-bib.sh
 # laptop in docking station; connect external monitors above laptop
-bindsym $mod+mod1+0 exec $HOME/.screenlayout/home-docking-with-laptop.sh
+bindsym $mod+mod1+0 exec $HOME/.screenlayout/single-monitor-4k.sh
 
