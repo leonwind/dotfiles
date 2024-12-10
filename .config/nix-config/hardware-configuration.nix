@@ -4,7 +4,7 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports =[ 
+  imports = [ 
   	(modulesPath + "/installer/scan/not-detected.nix")
   ];
 
@@ -35,4 +35,9 @@
 
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
+
+  #hardware.opengl = {
+  #  enable = true;
+  #  extraPackages = with pkgs; [ intel-media-sdk ];
+  #};
 }
