@@ -59,7 +59,7 @@
         python3
         go
 
-        anki-bin
+        #anki-bin
         xfce.thunar
         
         linuxKernel.packages.linux_zen.perf
