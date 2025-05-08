@@ -15,7 +15,7 @@
 
     home.packages = with pkgs; [
         openvpn
-        gnome.gnome-keyring
+        gnome-keyring
         libsecret 
         libgnome-keyring
         xclip
@@ -28,7 +28,7 @@
         docker
         firefox
         google-chrome
-        rxvt_unicode
+        rxvt-unicode-unwrapped
         tmux
         source-code-pro
 		oh-my-zsh	
