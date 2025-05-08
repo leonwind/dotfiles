@@ -54,12 +54,13 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
+
 	
-  virtualisation.docker.enable = true;
+  #virtualisation.docker.enable = enable;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.leon = {
@@ -84,26 +85,30 @@
 	xorg.xf86inputlibinput
 	xorg.xorgserver
 
-	pulseaudio
+        pulseaudio
+        pipewire
 	light
   ];
 
+  services = {
+      libinput = {
+        enable = true;
+        touchpad.naturalScrolling = true;
+      };
+
+      displayManager = {
+        defaultSession = "none+i3";
+      };
+  };
+
   services.xserver = {
-	enable = true;
-	
-	libinput = {
-		enable = true;
-		touchpad.naturalScrolling = true;
-	};
+        enable = true;
 
 	desktopManager = {
 		xterm.enable = false;
 	};
 	
-	displayManager = {
-		defaultSession = "none+i3";
-	};
-
+	
 	windowManager.i3 = {
 		enable = true;
 		extraPackages = with pkgs; [
@@ -111,7 +116,8 @@
 			i3status
 			i3lock
 		];
-	};
+        };
+        #videoDrivers = [ "intel" ];
   };
 
   hardware.trackpoint = {
@@ -121,14 +127,22 @@
   };
 
 
-  hardware.pulseaudio.enable = true;
-  nixpkgs.config.pulseaudio = true;
+  services.pipewire = {
+    enable = true;
+    audio.enable = true;
+    pulse.enable = true;
+  };
+  
+  hardware.pulseaudio.enable = false;
+  nixpkgs.config.pulseaudio = false;
 	
   programs.light.enable = true;
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   environment.pathsToLink = [ "/libexec" ];
+
+  environment.variables.LIBVA_DRIVER_NAME = "i915";
 
   services.pcscd.enable = true;
   programs.gnupg.agent = {
@@ -151,7 +165,7 @@
 
   networking.firewall = {
   	enable = true;
-	allowedTCPPorts = [22 8009 8010];  # For gnomecast server
+	allowedTCPPorts = [22 8083 8009 8010];  # For gnomecast server
   	allowedUDPPorts = [ 5353 ]; # For device discovery
 	allowedUDPPortRanges = [
 		{ from = 32768; to = 61000; } # For Streaming
@@ -166,11 +180,11 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;  
-    dedicatedServer.openFirewall = true;   
-  };
+  #programs.steam = {
+  #  enable = true;
+  #  remotePlay.openFirewall = true;  
+  #  dedicatedServer.openFirewall = true;   
+  #};
 
   services.blueman.enable = true;
 }
