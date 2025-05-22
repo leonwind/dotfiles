@@ -47,7 +47,6 @@
         zip
         unzip
         go-chromecast
-        steam
         scrot
         networkmanagerapplet
         vscode
@@ -59,7 +58,6 @@
         python3
         go
 
-        #anki-bin
         xfce.thunar
         
         linuxKernel.packages.linux_zen.perf

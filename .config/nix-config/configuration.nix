@@ -180,11 +180,11 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
+  #programs.steam = {
+  #  enable = true;
+  #  remotePlay.openFirewall = true;
+  #  dedicatedServer.openFirewall = true;
+  #};
 
   services.blueman.enable = true;
 }

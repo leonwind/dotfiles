@@ -19,6 +19,7 @@
             prompt_context(){}
             source "$(fzf-share)/key-bindings.zsh"
             source "$(fzf-share)/completion.zsh"
+            source "$HOME/.zplug/repos/agkozak/zsh-z/zsh-z.plugin.zsh"
             unsetopt BEEP
         '';
         

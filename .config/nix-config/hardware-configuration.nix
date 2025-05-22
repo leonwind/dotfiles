@@ -36,14 +36,10 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
-  hardware.opengl = {
-    enable = true;
-    driSupport32Bit = true;
-    extraPackages = with pkgs; [ intel-media-sdk ];
-  };
 
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = [ pkgs.intel-media-sdk ];
   };
 }
