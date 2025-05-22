@@ -47,7 +47,7 @@
         zip
         unzip
         go-chromecast
-        #steam
+        steam
         scrot
         networkmanagerapplet
         vscode
