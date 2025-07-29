@@ -62,7 +62,8 @@
         
         linuxKernel.packages.linux_zen.perf
 
-        prismlauncher
+        #prismlauncher
+        steam
     ];
     
     services.redshift = {
