@@ -52,6 +52,7 @@
         vscode
         poppler_utils
         pavucontrol
+        killall
 
         jetbrains.clion
         
@@ -62,7 +63,7 @@
         
         linuxKernel.packages.linux_zen.perf
 
-        #prismlauncher
+        prismlauncher
         steam
     ];
     
